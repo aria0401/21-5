@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>21-5 | Forside - Vi opfylder drømme</title>
+    <meta name="description" content="Fantastiske ferieboliger i udlandet. 21-5 har ejerforeninger der ligger i forskellige destinationer i verden. ">
+    <meta name="keywords" content="feriebolig, luksus sommerhus, sommerhus i udlandet, køb af feriebolig i udlandet, sommerhus med pool">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="karrusel.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;500&family=Muli&display=swap" rel="stylesheet">
+    <script src="script.js" async></script>
+    <style>
+        /*        hej Art kan pushe */
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0 auto;
+            overflow-x: hidden;
+
+        }
+
+        img {
+            width: 100%;
+            justify-content: center;
+            object-fit: cover;
+        }
+
+
+        /*  ------------ CSS TIL SPLASH BILLED OG TEXT_CONTAINER--------     */
+
+        .splash_billede img {
+            width: 140%;
+        }
+
+
+
+        .text_container h1 {
+            text-align: center;
+            font-weight: 300;
+            margin: 10vw;
+
+        }
+
+        .text_container p {
+            margin: 0 7vw 15vw 10vw;
+        }
+
+
+        /*  ------------ CSS TIL CTA --------     */
+
+        #cta_wrapper {
+            margin: 4em 0em 2em 0em;
+        }
+
+
+
+
+
+        @media only screen and (min-width: 768px) {
+
+
+            /*  ------------QUERY TIL SPLASH BILLED OG TEXT_CONTAINER----  768px ----     */
+
+            .splash_billede img {
+                width: 100%;
+            }
+
+
+            .text_container {
+                width: 100vw;
+                margin-left: 0vw;
+                padding: 2vw;
+            }
+
+            .text_container h1 {
+                margin: 6vw;
+                font-size: 1.8rem;
+            }
+
+            .text_container p {
+                font-size: 1.05rem;
+            }
+
+
+
+        }
+
+
+        @media only screen and (min-width: 900px) {
+
+
+
+            /*  ------------ QUERY TIL SPLASH BILLED OG TEXT_CONTAINER----  900px   ----     */
+
+            .splash_billede {
+                height: 72vh;
+                overflow: hidden;
+            }
+
+            .text_container h1 {
+                margin: 4vw;
+                font-size: 2rem;
+            }
+
+            .text_container p {
+                margin: 0 12vw 8vw 12vw;
+                font-size: 1.22rem;
+                line-height: 1.8rem;
+            }
+
+
+            #cta_wrapper {
+                margin-bottom: 12vh;
+                margin-top: 10vh;
+            }
+
+
+
+
+
+
+
+        }
+
+        /**********************  QUERY 1200px ***************************/
+        @media only screen and (min-width: 1200px) {
+
+            .text_container {
+                width: 86vw;
+                margin-left: 5vw;
+
+            }
+
+
+
+        }
+
+
+        /**********************  QUERY 1400px ***************************/
+        @media only screen and (min-width: 1400px) {
+
+            .text_container {
+                width: 84vw;
+                margin-left: 8vw;
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+
+        <nav>
+            <div id="logo">
+                <a href="index.html"><img src="billeder/logo.svg" title="Forside" alt="logo" class="logo"></a>
+            </div>
+
+            <div id="burgermenu" class="burgermenu_visibility">
+                <div id="burgermenu_knap"></div>
+                <ul id="burgermenu_background" class="hidden">
+
+                    <li><a href="til_salg_nu.html">Vores ferieboliger</a></li>
+                    <li><a href="medlemskab.html">21-5 konceptet</a></li>
+                    <li><a href="jura.html">Økonomi, jura & skat</a></li>
+                    <li><a href="om_os.html">Om os</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+
+                </ul>
+            </div>
+
+            <div id="desktop_menu" class="desktopmenu_visibility">
+
+
+                <a href="til_salg_nu.html">Vores ferieboliger</a>
+                <a href="medlemskab.html">21-5 konceptet</a>
+                <a href="jura.html">Økonomi, jura & skat</a>
+                <a href="om_os.html">Om os</a>
+                <a href="kontakt.html">Kontakt</a>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+    <section id="forside">
+
+        <div class="splash_billede">
+            <img class="img" src="" alt="">
+
+        </div>
+
+        <div class="text_container">
+            <h1 class="overskrift1"></h1>
+            <p class="afsnit1"></p>
+            <p class="afsnit1_1"></p>
+        </div>
+
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <!--                <div class="numbertext">1 / 3</div>-->
+                <div class="text_mySlides">
+                    <h3 class="navne1"></h3>
+                    <em>
+                        <p class="text1"></p>
+                    </em>
+                </div>
+                <img class="slide1" src="">
+            </div>
+
+            <div class="mySlides fade">
+                <!--                <div class="numbertext">2 / 3</div>-->
+                <div class="text_mySlides">
+                    <h3 class="navne2"></h3>
+                    <em>
+                        <p class="text2"></p>
+                    </em>
+                </div>
+                <img class="slide2" src="">
+            </div>
+
+
+
+            <div class="mySlides fade">
+                <!--                <div class="numbertext">3 / 3</div>-->
+                <div class="text_mySlides">
+                    <h3 class="navne3"></h3>
+                    <em>
+                        <p class="text3"></p>
+                    </em>
+                </div>
+                <img class="slide3" src="">
+            </div>
+
+
+
+
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
+
+        <div id="cta_wrapper">
+            <h3 class="cta_txt"></h3>
+            <a href="kontakt.html" class="cta"></a>
+        </div>
+    </section>
+
+    <footer>
+
+        <div class="left element">
+            <ul>
+                <li><a href="">Hvad?</a></li>
+                <li><a href="">Hvor?</a></li>
+                <li><a href="">Hvorfor?</a></li>
+            </ul>
+        </div>
+
+        <div class="center element">
+            <p>Se mere på vores sociale medier, <br>eller tilmeld dig vores nyhedsbrev for mere</p>
+            <div class="center_wrap">
+
+                <div>
+                    <h1>Nyhedsbrev</h1>
+                    <form action="/action_page.php">
+                        <div class="form_container">
+                            <input class="email" type="text" placeholder="Email addresse" name="mail" required>
+
+                            <input class="tilmeld" type="submit" value="Tilmeld"></div>
+                    </form>
+                </div>
+
+                <div>
+                    <h1>Sociale medier</h1>
+                    <img src="billeder/facebook.svg" alt="facebook logo">
+                    <img src="billeder/instagram.svg" alt="instagram logo">
+                </div>
+
+
+            </div>
+        </div>
+
+
+        <div class="right element">
+            <p> 21-5
+                Rungstedvej 41,<br>
+                2970 Hørsholm</p>
+
+            <p>tlf 12233445 <br>
+                CVR 009090909 <br>
+                Copyright © 2010-2020</p>
+        </div>
+
+    </footer>
+
+
+    <script>
+        let side = [];
+        const URLend = "side?slug=forside"
+        const endpoint = `http://ariadna.dk/21-5/wp/wp-json/wp/v2/${URLend}`;
+        document.addEventListener("DOMContentLoaded", start);
+
+        function start() {
+            hentData();
+            hentSlides();
+            console.log("start");
+
+        }
+
+        /************* script til splash billede text_container y cta ********/
+
+        async function hentData() {
+            const response = await fetch(endpoint);
+            side = await response.json();
+            console.log(side);
+            showElement();
+        }
+
+
+
+        function showElement() {
+            side.forEach(element => {
+                document.querySelector(".img").src = element.billede1.guid;
+                document.querySelector(".overskrift1").textContent = element.overskrift1;
+                document.querySelector(".afsnit1").textContent = element.afsnit1;
+                document.querySelector(".afsnit1_1").textContent = element.afsnit1_1;
+                document.querySelector(".cta_txt").textContent = element.tekst_til_cta;
+                document.querySelector(".cta").textContent = element.cta;
+
+            })
+
+        }
+
+
+
+        /************* script til karruselen *** fra w3schools**/
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+
+        /************* js som henter data fra wp til billederne i karruselen  *****/
+
+        const urlSlides = "testimonier?slug=forside"
+        const endpointSlides = `http://ariadna.dk/21-5/wp/wp-json/wp/v2/${urlSlides}`;
+
+
+        async function hentSlides() {
+            console.log("hentSplash");
+            const responseSlides = await fetch(endpointSlides);
+            const json = await responseSlides.json();
+            visSlides(json);
+
+        }
+
+        function visSlides(json) {
+            console.log("billede virker");
+            console.log(json);
+            json.forEach(obj => {
+                document.querySelector(".slide1").src = obj.billede1.guid;
+                document.querySelector(".text1").textContent = obj.tekst1;
+                document.querySelector(".navne1").textContent = obj.navne1;
+                document.querySelector(".slide2").src = obj.billede2.guid;
+                document.querySelector(".text2").textContent = obj.tekst2;
+                document.querySelector(".navne2").textContent = obj.navne2;
+                document.querySelector(".slide3").src = obj.billede3.guid;
+                document.querySelector(".text3").textContent = obj.tekst3;
+                document.querySelector(".navne3").textContent = obj.navne3;
+            })
+
+        }
+    </script>
+
+</body></html>

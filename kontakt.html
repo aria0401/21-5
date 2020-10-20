@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;500&family=Muli&display=swap" rel="stylesheet">
+    <title>21-5 | Kontakt - Vi opfylder drømme</title>
+    <meta name="description" content="Fantastiske ferieboliger i udlandet. 21-5 har ejerforeninger der ligger i forskellige destinationer i verden. ">
+    <meta name="keywords" content="feriebolig, luksus sommerhus, sommerhus i udlandet, køb af feriebolig i udlandet, sommerhus med pool">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" async></script>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0 auto;
+            overflow-x: hidden;
+
+        }
+
+        img {
+            width: 100%;
+            justify-content: center;
+            object-fit: cover;
+        }
+
+        /*
+#undermenu {
+height: 6vh;
+}
+*/
+
+        section {
+            margin: 3vw;
+            margin-top: 26vh;
+        }
+
+
+
+        .content_wrapper {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .col {
+            flex-grow: 1;
+            flex-basis: 300px;
+        }
+
+
+
+        /* *****     form ****************/
+
+
+        .formulario {
+            display: flex;
+            flex-wrap: nowrap;
+            /*            width: 40vw;*/
+            margin: 4vw 0vw 10vw 4vw;
+        }
+
+        form {
+                {
+                display: flex;
+                flex-direction: column;
+                height: 40vh;
+            }
+        }
+
+        .form_placeholder {
+            display: flex;
+            flex-wrap: nowrap;
+            width: 70vw;
+        }
+
+        form p {
+            margin-right: 2vw;
+        }
+
+        .box {
+            flex-basis: 200px;
+            flex-grow: 1;
+            border-radius: 14px;
+            border-collapse: collapse;
+            height: 5vh;
+            margin-top: 1vh;
+        }
+
+        textarea {
+            width: 70vw;
+            border-radius: 14px;
+        }
+
+        .send_besked {
+
+
+            font-size: 1.5rem;
+            background-color: white;
+            padding: 1.5vw;
+            width: 10vw;
+            border-radius: 8px;
+            margin-left: 60vw;
+
+
+        }
+
+
+        /**********************  QUERY 768px ***************************/
+
+        @media only screen and (min-width: 768px) {
+
+            .text_container {
+                width: 70vw;
+            }
+
+            .form_placeholder {
+
+                width: 30vw;
+            }
+
+            textarea {
+                width: 30vw;
+                border-radius: 14px;
+            }
+
+            .send_besked {
+                margin-left: 20vw;
+                padding: 1vw;
+                /*                height: 4vh;*/
+            }
+
+            .content_wrapper {
+                margin-top: 8vh;
+            }
+
+            .overskrift2 {
+                margin-top: -1vh;
+            }
+
+        }
+
+
+        /**********************  QUERY 900px ***************************/
+
+        @media only screen and (min-width: 900px) {
+
+            section {
+                margin: 6vw;
+                margin-top: 26vh;
+            }
+
+            .content_wrapper img {
+                width: 100%;
+            }
+
+            .content_wrapper {
+                margin-bottom: 12vh;
+
+            }
+
+
+
+        }
+
+        /**********************  QUERY 1200px ***************************/
+
+        @media only screen and (min-width: 1200px) {
+
+            .text_container {
+                width: 50vw;
+            }
+
+            section {
+                margin: 12vw;
+                margin-top: 26vh;
+            }
+
+            .send_besked {
+                margin-left: 20vw;
+                width: 5vw;
+            }
+
+            .content_wrapper {
+                margin-bottom: 0vh;
+            }
+
+            .form_placeholder {
+
+                width: 25vw;
+            }
+
+            textarea {
+                width: 25vw;
+
+            }
+
+        }
+
+        /**********************  QUERY 1400px ***************************/
+
+        @media only screen and (min-width: 1400px) {
+
+            .send_besked {
+                margin-left: 21vw;
+                width: 4vw;
+            }
+
+            section {
+                margin-top: 32vh;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div id="undermenu">
+
+
+    </div>
+
+    <header>
+
+
+
+        <nav>
+            <div id="logo">
+                <a href="index.html"><img src="billeder/logo.svg" title="Forside" alt="logo" class="logo"></a>
+            </div>
+
+            <div id="burgermenu" class="burgermenu_visibility">
+                <div id="burgermenu_knap"></div>
+                <ul id="burgermenu_background" class="hidden">
+
+                    <li><a href="til_salg_nu.html">Vores ferieboliger</a></li>
+                    <li><a href="medlemskab.html">21-5 konceptet</a></li>
+                    <li><a href="jura.html">Økonomi, jura & skat</a></li>
+                    <li><a href="om_os.html">Om os</a></li>
+                    <li><a href="kontakt.html" class="valgt_mobil_menu">Kontakt</a></li>
+
+                </ul>
+            </div>
+
+            <div id="desktop_menu" class="desktopmenu_visibility">
+
+
+                <a href="til_salg_nu.html">Vores ferieboliger</a>
+                <a href="medlemskab.html">21-5 konceptet</a>
+                <a href="jura.html">Økonomi, jura & skat</a>
+                <a href="om_os.html">Om os</a>
+                <a href="kontakt.html" class="valgt_desktop_menu">Kontakt</a>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <section id="kontakt">
+
+        <div class="text_container">
+            <h1 class="overskrift1"></h1>
+            <p class="afsnit1"></p>
+            <p class="afsnit1_1"></p>
+            <p class="afsnit2"></p>
+        </div>
+
+        <div class="content_wrapper">
+
+            <div class="col">
+                <h1 class="overskrift2"></h1>
+                <div class="formulario">
+                    <form>
+
+                        <div class="form_placeholder">
+
+                            <p>Navn</p>
+                            <input type="text" name="firstname" class="box">
+                        </div>
+
+
+
+                        <div class="form_placeholder">
+                            <p>E-mail</p>
+                            <input type="email" name="email" class="box">
+
+                        </div>
+
+
+
+                        <p>Besked</p>
+                        <textarea name="message" rows="10" cols="30"></textarea>
+                        <br><br>
+                        <input type="submit" value="&gt" class="send_besked">
+
+                    </form>
+
+                </div>
+
+            </div>
+            <div class="col">
+                <img class="img" src="" alt="">
+            </div>
+
+        </div>
+
+
+
+        <div id="cta_wrapper">
+            <h3 class="cta_txt"></h3>
+            <a href="kontakt.html" class="cta"></a>
+        </div>
+    </section>
+
+    <footer>
+
+        <div class="left element">
+            <ul>
+                <li><a href="">Hvad?</a></li>
+                <li><a href="">Hvor?</a></li>
+                <li><a href="">Hvorfor?</a></li>
+            </ul>
+        </div>
+
+        <div class="center element">
+            <p>Se mere på vores sociale medier, <br>eller tilmeld dig vores nyhedsbrev for mere</p>
+            <div class="center_wrap">
+
+                <div>
+                    <h1>Nyhedsbrev</h1>
+                    <form action="/action_page.php">
+                        <div class="form_container">
+                            <input class="email" type="text" placeholder="Email addresse" name="mail" required>
+
+                            <input class="tilmeld" type="submit" value="Tilmeld"></div>
+                    </form>
+                </div>
+
+                <div>
+                    <h1>Sociale medier</h1>
+                    <img src="billeder/facebook.svg" alt="facebook logo">
+                    <img src="billeder/instagram.svg" alt="instagram logo">
+                </div>
+
+
+            </div>
+        </div>
+
+
+        <div class="right element">
+            <p> 21-5
+                Rungstedvej 41,<br>
+                2970 Hørsholm</p>
+
+            <p>tlf 12233445 <br>
+                CVR 009090909 <br>
+                Copyright © 2010-2020</p>
+        </div>
+
+    </footer>
+
+    <script>
+        let side = [];
+        const URLend = "side?slug=kontakt"
+        const endpoint = `http://ariadna.dk/21-5/wp/wp-json/wp/v2/${URLend}`;
+        document.addEventListener("DOMContentLoaded", start);
+
+        function start() {
+            hentData();
+            console.log("start");
+
+        }
+
+        async function hentData() {
+            console.log("hentDta");
+            const response = await fetch(endpoint);
+            side = await response.json();
+            console.log(side);
+            showElement();
+        }
+
+
+        function showElement() {
+            console.log(side);
+            console.log("side virker");
+            side.forEach(element => {
+                document.querySelector(".img").src = element.billede1.guid;
+                document.querySelector(".overskrift1").textContent = element.overskrift1;
+                document.querySelector(".overskrift2").textContent = element.overskrift2;
+                document.querySelector(".afsnit1").textContent = element.afsnit1;
+                document.querySelector(".afsnit1_1").textContent = element.afsnit1_1;
+                document.querySelector(".afsnit2").textContent = element.afsnit2;
+                document.querySelector(".cta_txt").textContent = element.tekst_til_cta;
+                document.querySelector(".cta").textContent = element.cta;
+
+            })
+
+        }
+
+    </script>
+
+
+</body>
+
+</html>

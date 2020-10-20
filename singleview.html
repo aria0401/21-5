@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;500&family=Muli&display=swap" rel="stylesheet">
+    <title>21-5 | Teamet - Vi opfylder drømme</title>
+    <meta name="description" content="Fantastiske ferieboliger i udlandet. 21-5 har ejerforeninger der ligger i forskellige destinationer i verden. ">
+    <meta name="keywords" content="feriebolig, luksus sommerhus, sommerhus i udlandet, køb af feriebolig i udlandet, sommerhus med pool">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" async></script>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0 auto;
+            overflow-x: hidden;
+
+        }
+
+        img {
+            width: 100%;
+            justify-content: center;
+            object-fit: cover;
+        }
+
+        section {
+            margin: 5vw;
+            margin-top: 50vw;
+            max-width: 1200px;
+        }
+
+
+        /*
+#undermenu {
+height: 6vh;
+}*/
+
+
+
+        .tilbage a {
+            text-decoration: none;
+            color: #f29770;
+            /*            font-weight: 500px;*/
+        }
+
+        .tilbage a:hover {
+            color: #707070;
+        }
+
+
+        .billede_desktop {
+            display: none;
+        }
+
+
+        .content_wrapper {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .col {
+            flex-grow: 1;
+            flex-basis: 250px;
+        }
+
+
+
+
+
+
+        /**********************  QUERY 375px ***************************/
+        @media only screen and (min-width: 375px) {
+
+            section {
+                margin-top: 50vw;
+            }
+
+
+            #slides {
+                height: 63vh;
+                padding-top: 5vh;
+            }
+
+        }
+
+
+
+
+
+
+
+
+
+        /**********************  QUERY 768px ***************************/
+
+        @media only screen and (min-width: 768px) {
+
+            #eachPerson {
+                margin-top: 4vh;
+
+            }
+
+            section {
+                margin-top: 26vw;
+            }
+
+            .image {
+                padding: 3vw;
+            }
+
+            p {
+                line-height: 24px;
+            }
+
+            .billede_mobil {
+                display: none;
+            }
+
+            .billede_desktop {
+                display: block;
+            }
+
+        }
+
+
+        /**********************  QUERY 900px ***************************/
+
+        @media only screen and (min-width: 900px) {
+
+
+            section {
+                margin-top: 20vw;
+            }
+
+            .image {
+
+                padding-right: 0vw;
+            }
+
+        }
+
+        /**********************  QUERY 1200px ***************************/
+
+        @media only screen and (min-width: 1200px) {
+
+
+            section {
+                margin-top: 22vw;
+            }
+
+        }
+
+        /********************** QUERY 1400px ***************************/
+        @media only screen and (min-width: 1400px) {
+            section {
+                margin-top: 18vw;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div id="undermenu">
+
+    </div>
+
+    <header>
+
+
+
+        <nav>
+            <div id="logo">
+                <a href="index.html"><img src="billeder/logo.svg" title="Forside" alt="logo" class="logo"></a>
+            </div>
+
+            <div id="burgermenu" class="burgermenu_visibility">
+                <div id="burgermenu_knap"></div>
+                <ul id="burgermenu_background" class="hidden">
+
+                    <li><a href="til_salg_nu.html">Vores ferieboliger</a></li>
+                    <li><a href="medlemskab.html">21-5 konceptet</a></li>
+                    <li><a href="jura.html">Økonomi, jura & skat</a></li>
+                    <li><a href="om_os.html" class="valgt_mobil_menu">Om os</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+
+                </ul>
+            </div>
+
+            <div id="desktop_menu" class="desktopmenu_visibility">
+
+
+                <a href="til_salg_nu.html">Vores ferieboliger</a>
+                <a href="medlemskab.html">21-5 konceptet</a>
+                <a href="jura.html">Økonomi, jura & skat</a>
+                <a href="om_os.html" class="valgt_desktop_menu">Om os</a>
+                <a href="kontakt.html">Kontakt</a>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <section id="popup">
+
+        <div class="tilbage"><a href="21-5_teamet.html">&lt; Tilbage til 21-5 Teamet</a> </div>
+
+
+        <div id="eachPerson" class="content_wrapper reverse">
+
+            <div class="col text text_left">
+                <h1 class="navn"></h1>
+                <p class="stilling"></p>
+                <img class="billede_mobil" src="" alt="">
+                <p class="afsnit1"></p>
+                <p class="afsnit1_1"></p>
+                <p class="email"></p>
+            </div>
+            <div class="col image">
+                <img class="billede_desktop" src="" alt="">
+            </div>
+
+
+
+        </div>
+
+
+
+
+
+        <div class="tilbage"><a href="21-5_teamet.html">&lt; Tilbage til 21-5 Teamet</a> </div>
+    </section>
+
+    <footer>
+
+        <div class="left element">
+            <ul>
+                <li><a href="">Hvad?</a></li>
+                <li><a href="">Hvor?</a></li>
+                <li><a href="">Hvorfor?</a></li>
+            </ul>
+        </div>
+
+        <div class="center element">
+            <p>Se mere på vores sociale medier, <br>eller tilmeld dig vores nyhedsbrev for mere</p>
+            <div class="center_wrap">
+
+                <div>
+                    <h1>Nyhedsbrev</h1>
+                    <form action="/action_page.php">
+                        <div class="form_container">
+                            <input class="email" type="text" placeholder="Email addresse" name="mail" required>
+
+                            <input class="tilmeld" type="submit" value="Tilmeld"></div>
+                    </form>
+                </div>
+
+                <div>
+                    <h1>Sociale medier</h1>
+                    <img src="billeder/facebook.svg" alt="facebook logo">
+                    <img src="billeder/instagram.svg" alt="instagram logo">
+                </div>
+
+
+            </div>
+        </div>
+
+
+        <div class="right element">
+            <p> 21-5
+                Rungstedvej 41,<br>
+                2970 Hørsholm</p>
+
+            <p>tlf 12233445 <br>
+                CVR 009090909 <br>
+                Copyright © 2010-2020</p>
+        </div>
+
+    </footer>
+</body>
+<script>
+    const url = new URLSearchParams(window.location.search);
+    const id = url.get("id");
+    let personer;
+    let detalje = document.querySelector("#popup");
+    const URLend = "teamet"
+    const endpoint = `http://ariadna.dk/21-5/wp/wp-json/wp/v2/${URLend}`;
+    document.addEventListener("DOMContentLoaded", start);
+
+
+
+    function start() {
+        hentData();
+    }
+
+
+    async function hentData() {
+
+        const response = await fetch(endpoint);
+        personer = await response.json();
+        showBolig();
+    }
+
+
+
+    function showBolig() {
+
+        personer.forEach(element => {
+            console.log("id: ", element.id);
+            if (element.id == id) {
+                detalje.querySelector(".navn").textContent = element.navn;
+                detalje.querySelector(".stilling").textContent = element.stilling;
+                detalje.querySelector(".afsnit1").textContent = element.afsnit1;
+                detalje.querySelector(".afsnit1_1").textContent = element.afsnit1_1;
+                detalje.querySelector(".email").textContent = "E-mail: " + element.email;
+                detalje.querySelector(".billede_mobil").src = element.billede.guid;
+                detalje.querySelector(".billede_desktop").src = element.billede.guid;
+
+            }
+        })
+
+
+
+    }
+
+</script>
+
+</html>

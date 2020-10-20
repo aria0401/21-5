@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>21-5 | Destinationer - Mallorca</title>
+    <meta name="description" content="Fantastiske ferieboliger i udlandet. 21-5 har ejerforeninger der ligger i forskellige destinationer i verden. ">
+    <meta name="keywords" content="feriebolig, luksus sommerhus, sommerhus i udlandet, køb af feriebolig i udlandet, sommerhus med pool">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;500&family=Muli&display=swap" rel="stylesheet">
+    <script src="script.js" async></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        img {
+            width: 100%;
+        }
+
+        #mallorca {
+            margin: 5vw;
+            margin-top: 54vw;
+            max-width: 1200px;
+        }
+
+
+
+        .tilbage a {
+            text-decoration: none;
+            color: #f29770;
+            font-weight: 500px;
+        }
+
+        .tilbage a:hover {
+            color: #707070;
+        }
+
+
+
+        .title {
+            font-size: 1.9rem;
+            margin-bottom: 1vw;
+            margin-top: 3vh;
+        }
+
+        #mallorca p {
+            margin-top: 2vh;
+            margin-bottom: 2vh;
+        }
+
+        .billede1,
+        .billede2 {
+            margin-top: 2vh;
+            margin-bottom: 2vh;
+        }
+
+
+
+        /******** CSS til billede container **********/
+
+
+        .legend_img_container {
+            visibility: hidden;
+        }
+
+        main {
+            width: 90vw;
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 3vh;
+        }
+
+        #filter_container {
+            display: none;
+        }
+
+        .carousel,
+        .intro_text {
+            flex-grow: 1;
+            flex-basis: 300px;
+        }
+
+        .intro_text {
+            margin-top: -18vh;
+        }
+
+        .tekst_container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .col {
+            flex-grow: 1;
+            flex-basis: 300px;
+        }
+
+        .carousel {
+            width: 100%;
+            height: 100%;
+        }
+
+
+
+
+        .the_container {
+            display: flex;
+            /*---- veo una foto a la vez y puedo scrolle -----*/
+            overflow-x: scroll;
+            scroll-snap-type: x mandatory;
+        }
+
+        .the_container section {
+            min-width: 100%;
+            scroll-snap-align: start;
+        }
+
+        .carousel_inner {
+            display: flex;
+        }
+
+
+        .legend_img_container {
+            margin-bottom: 4vh;
+        }
+
+        .legend_img_container section {
+            /* display: inline-block; -- hace que las fotos en el container se vean una al lado de la otra*/
+            display: inline-block;
+            height: 8vh;
+        }
+
+        .legend_img_container img {
+            height: 100%;
+            width: auto;
+            cursor: pointer;
+        }
+
+        .legend_border {
+            outline: 0.25px solid black;
+            outline-offset: -1px;
+        }
+
+        .backward,
+        .forward {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            color: white;
+        }
+
+        .backward p,
+        .forward p {
+            z-index: 10;
+            position: absolute;
+            background-color: #f3f2f0e3;
+            width: 6vw;
+            padding: 2vw;
+            font-size: 1.5rem;
+        }
+
+
+        .forward p {
+            margin-left: -20px;
+        }
+
+        /******** CSS til billede container slut **********/
+
+
+
+        /*------------------------------MEDIAQUERY 375px-----------------------*/
+
+        @media screen and (min-width:375px) {
+
+            .legend_img_container section {
+
+                height: 6vh;
+
+            }
+
+            .legend_img_container img {
+                height: 110%;
+
+            }
+
+        }
+
+
+        /*------------------------------MEDIAQUERY 768px-----------------------*/
+
+        @media screen and (min-width:768px) {
+
+            .billede1,
+            .billede2 {
+                display: none;
+            }
+
+            #mallorca {
+                margin-top: 26vh;
+            }
+
+            .intro_text {
+                padding-left: 3vw;
+                margin-top: -1vh;
+            }
+
+            .carousel {
+                padding-left: 0vw;
+            }
+
+            .forward p {
+                margin-left: -46px;
+            }
+
+            .legend_img_container img {
+                height: 90%;
+            }
+
+            .col_2 {
+                margin-right: 2vw;
+            }
+
+            .col_3 {
+                margin-left: 2vw;
+            }
+
+
+            .tekst_container {
+/*                margin-top: -10vh;*/
+            }
+        }
+
+
+        /*------------------------------MEDIAQUERY 900px-----------------------*/
+
+        @media screen and (min-width:900px) {
+
+            .legend_img_container {
+                margin-bottom: 2vh;
+            }
+
+            .legend_img_container img {
+                height: 138%;
+            }
+
+            .backward p,
+            .forward p {
+                width: 5vw;
+            }
+
+            .forward p {
+                margin-left: -45px;
+            }
+
+            .tekst_container {
+
+                margin-top: -10vh;
+            }
+
+
+
+        }
+
+        /*------------------------------MEDIAQUERY 1200px-----------------------*/
+
+        @media screen and (min-width:1200px) {
+            .legend_img_container img {
+                height: 186%;
+            }
+
+            .backward p,
+            .forward p {
+                width: 4vw;
+            }
+
+            .forward p {
+                margin-left: -48px;
+            }
+
+            .tekst_container {
+                width: 90vw;
+                margin-top: -16vh;
+            }
+
+        }
+
+        /*------------------------------MEDIAQUERY 1400px-----------------------*/
+
+        @media screen and (min-width:1400px) {
+            .forward p {
+                margin-left: -56px;
+            }
+
+
+
+        }
+
+        /*------------------------------MEDIAQUERY 1500px-----------------------*/
+
+        @media screen and (min-width:1500px) {
+            .tekst_container {
+                margin-top: -18vh;
+            }
+
+        }
+
+
+        /*------------------------------MEDIAQUERY 1600px-----------------------*/
+
+        @media screen and (min-width:1600px) {
+            .forward p {
+                margin-left: -64px;
+            }
+
+            .legend_img_container img {
+                height: 200%;
+            }
+
+        }
+
+    </style>
+
+
+</head>
+
+<body>
+
+    <div id="undermenu">
+        <div id="undermenu_knap"></div>
+        <a href="til_salg_nu.html">Til salg nu</a>
+        <a href="boliger.html">Boliger</a>
+        <a href="destinatoner.html" class="valgt_undermenu">Destinationer</a>
+
+    </div>
+
+    <header>
+
+
+
+
+        <nav>
+            <div id="logo">
+                <a href="index.html"><img src="billeder/logo.svg" title="Forside" alt="logo" class="logo"></a>
+            </div>
+
+            <div id="burgermenu" class="burgermenu_visibility">
+                <div id="burgermenu_knap"></div>
+                <ul id="burgermenu_background" class="hidden">
+
+                    <li><a href="til_salg_nu.html" class="valgt_mobil_menu">Vores ferieboliger</a></li>
+                    <li><a href="medlemskab.html">21-5 konceptet</a></li>
+                    <li><a href="jura.html">Økonomi, jura & skat</a></li>
+                    <li><a href="om_os.html">Om os</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+
+                </ul>
+            </div>
+
+            <div id="desktop_menu" class="desktopmenu_visibility">
+
+
+                <a href="til_salg_nu.html" class="valgt_desktop_menu">Vores ferieboliger</a>
+                <a href="medlemskab.html">21-5 konceptet</a>
+                <a href="jura.html">Økonomi, jura & skat</a>
+                <a href="om_os.html">Om os</a>
+                <a href="kontakt.html">Kontakt</a>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+
+
+    <section id="mallorca">
+        <div id="filter_container">
+            <button class="filter"><a href="destinatoner.html">Destinationer</a></button>
+            <button class="filter"><a href="mallorca.html">Mallorca</a></button>
+            <button class="filter"><a href=""></a>Sydspanien</button>
+            <button class="filter"><a href=""></a>Toscana</button>
+            <button class="filter"><a href=""></a>Sydfrankring</button>
+            <button class="filter"><a href=""></a>Chamonix</button>
+            <button class="filter"><a href=""></a>New York</button>
+            <button class="filter"><a href=""></a>Barcelona</button>
+            <button class="filter"><a href=""></a>Paris</button>
+            <button class="filter"><a href=""></a>Rom</button>
+        </div>
+
+        <div class="tilbage"><a href="destinatoner.html">&lt; Se andre destinationer</a> </div>
+        <h1 class="title"></h1>
+
+        <template>
+            <section>
+
+                <img class="carousel_imgs">
+            </section>
+        </template>
+        <main>
+            <div class="carousel">
+
+                <div class="carousel_inner">
+
+                    <div class="backward">
+                        <p>&lt;</p>
+                    </div>
+                    <div class="the_container">
+
+                    </div>
+                    <div class="forward">
+                        <p>&gt;</p>
+                    </div>
+
+                </div>
+
+                <div class="legend_img_container">
+
+                </div>
+
+            </div>
+            <div class="intro_text">
+                <h1 class="overskrift1"></h1>
+                <p class="afsnit1"></p>
+                <p class="afsnit1_1"></p>
+
+                <img class="billede1">
+            </div>
+
+        </main>
+
+        <div class="tekst_container">
+            <div class="col col_2">
+                <h2 class="overskrift2"></h2>
+                <p class="afsnit2"></p>
+                <p class="afsnit2_2"></p>
+                <img class="billede2">
+            </div>
+            <div class="col col_3">
+                <h2 class="overskrift3"></h2>
+                <p class="afsnit3"></p>
+                <p class="afsnit3_3"></p>
+            </div>
+        </div>
+
+        <div class="tilbage"><a href="destinatoner.html">&lt; Se andre destinationer</a> </div>
+    </section>
+    <footer>
+
+        <div class="left element">
+            <ul>
+                <li><a href="">Hvad?</a></li>
+                <li><a href="">Hvor?</a></li>
+                <li><a href="">Hvorfor?</a></li>
+            </ul>
+        </div>
+
+        <div class="center element">
+            <p>Se mere på vores sociale medier, <br>eller tilmeld dig vores nyhedsbrev for mere</p>
+            <div class="center_wrap">
+
+                <div>
+                    <h1>Nyhedsbrev</h1>
+                    <form action="/action_page.php">
+                        <div class="form_container">
+                            <input class="email" type="text" placeholder="Email addresse" name="mail" required>
+
+                            <input class="tilmeld" type="submit" value="Tilmeld"></div>
+                    </form>
+                </div>
+
+                <div>
+                    <h1>Sociale medier</h1>
+                    <img src="billeder/facebook.svg" alt="facebook logo">
+                    <img src="billeder/instagram.svg" alt="instagram logo">
+                </div>
+
+
+            </div>
+        </div>
+
+
+        <div class="right element">
+            <p> 21-5
+                Rungstedvej 41,<br>
+                2970 Hørsholm</p>
+
+            <p>tlf 12233445 <br>
+                CVR 009090909 <br>
+                Copyright © 2010-2020</p>
+        </div>
+
+    </footer>
+
+    <script>
+        "use strict"
+        const url = "side/359"
+        const endpoint = `http://ariadna.dk/21-5/wp/wp-json/wp/v2/${url}`;
+        let theJson;
+        let numberOfImgsInCarousel;
+        let carouselCunrrentNumber = 0;
+
+        /***************************************/
+        // til teksten
+
+        let side = [];
+        const urlTekst = "side/?slug=mallorca"
+        const endpointTekst = `http://ariadna.dk/21-5/wp/wp-json/wp/v2/${urlTekst}`;
+        /***************************************/
+
+
+        document.addEventListener("DOMContentLoaded", start);
+
+        function start() {
+            hentJson();
+            document.querySelector(".forward").addEventListener("click", forward);
+            document.querySelector(".backward").addEventListener("click", backward);
+            /***************************************/
+            hentTekst();
+            /***************************************/
+        }
+
+
+        /***************************************/
+        async function hentTekst() {
+            console.log("hentDta");
+            const responseTekst = await fetch(endpointTekst);
+            side = await responseTekst.json();
+            console.log(side);
+            showElement();
+        }
+
+        function showElement() {
+            console.log(side);
+            side.forEach(element => {
+
+                document.querySelector(".title").textContent = element.title.rendered;
+                document.querySelector(".overskrift1").textContent = element.overskrift1;
+                document.querySelector(".afsnit1").textContent = element.afsnit1;
+                document.querySelector(".afsnit1_1").textContent = element.afsnit1_1;
+
+                document.querySelector(".overskrift2").textContent = element.overskrift2;
+                document.querySelector(".afsnit2").textContent = element.afsnit2;
+                document.querySelector(".afsnit2_2").textContent = element.afsnit2_2;
+                document.querySelector(".overskrift3").textContent = element.overskrift3;
+                document.querySelector(".afsnit3").textContent = element.afsnit3;
+                document.querySelector(".afsnit3_3").textContent = element.afsnit3_3;
+                document.querySelector(".billede1").src = element.billede1.guid;
+                document.querySelector(".billede2").src = element.billede2.guid;
+
+
+            })
+
+        }
+
+
+
+        /***************************************/
+
+
+        async function hentJson() {
+            const response = await fetch(endpoint);
+            theJson = await response.json();
+            buildCarousel();
+            console.log(theJson);
+
+        }
+
+
+
+        function buildCarousel() {
+            numberOfImgsInCarousel = theJson.billedkarrusel.length;
+            console.log(numberOfImgsInCarousel);
+            theJson.billedkarrusel.forEach((obj, index) => {
+                console.log(obj.guid);
+                const theClone = document.querySelector("template").cloneNode(true).content;
+                const secondClone = document.querySelector("template").cloneNode(true).content;
+                theClone.querySelector("img").src = obj.guid;
+                secondClone.querySelector("img").src = obj.guid;
+                secondClone.querySelector("section").dataset.myIndex = index;
+                document.querySelector(".the_container").appendChild(theClone);
+                document.querySelector(".legend_img_container").appendChild(secondClone);
+
+            })
+
+            document.querySelector(".legend_img_container section").classList.add("legend_border");
+
+            document.querySelector(".the_container").addEventListener("scroll", scrollFunction);
+
+            document.querySelectorAll(".legend_img_container section").forEach(each => {
+                each.addEventListener("click", legendClicks);
+            })
+        }
+
+
+
+        function scrollFunction() {
+            document.querySelectorAll(".legend_img_container section").forEach(each => {
+                each.classList.remove("legend_border");
+            })
+            carouselCunrrentNumber = Math.round(document.querySelector(".the_container").scrollLeft / document.querySelector(".carousel_imgs").width);
+            console.log(carouselCunrrentNumber);
+            document.querySelector(`.legend_img_container section:nth-child(${carouselCunrrentNumber+1})`).classList.add("legend_border");
+            setButtons();
+
+        }
+
+
+        function legendClicks(clickEvent) {
+            console.log("legendClicks", clickEvent.currentTarget);
+            carouselCunrrentNumber = clickEvent.currentTarget.dataset.myIndex;
+            navigate();
+        }
+
+
+        function forward() {
+            if (carouselCunrrentNumber < numberOfImgsInCarousel - 1) {
+                carouselCunrrentNumber++;
+                navigate();
+            }
+        }
+
+        function backward() {
+            if (carouselCunrrentNumber > 0) {
+                carouselCunrrentNumber--;
+                navigate();
+            }
+        }
+
+        function navigate() {
+
+            document.querySelector(".the_container").scrollTo(
+                //{left: 300}
+                {
+                    left: carouselCunrrentNumber * document.querySelector(".carousel_imgs").width,
+                    behavior: "smooth"
+                }
+
+            )
+            setButtons();
+        }
+
+        function setButtons() {
+            if (carouselCunrrentNumber < numberOfImgsInCarousel - 1) {
+                document.querySelector(".forward").style.opacity = 1;
+                document.querySelector(".forward").style.cursor = "pointer";
+            } else {
+                document.querySelector(".forward").style.opacity = 0.2;
+                document.querySelector(".forward").style.cursor = "default";
+            }
+
+            if (carouselCunrrentNumber > 0) {
+                document.querySelector(".backward").style.opacity = 1;
+                document.querySelector(".backward").style.cursor = "pointer";
+            } else {
+                document.querySelector(".backward").style.opacity = 0.2;
+                document.querySelector(".backward").style.cursor = "default";
+            }
+
+
+        }
+
+    </script>
+
+</body>
+
+</html>

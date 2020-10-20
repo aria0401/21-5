@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>21-5 | Destinationer - Vi opfylder drømme</title>
+    <meta name="description" content="Fantastiske ferieboliger i udlandet. 21-5 har ejerforeninger der ligger i forskellige destinationer i verden. ">
+    <meta name="keywords" content="feriebolig, luksus sommerhus, sommerhus i udlandet, køb af feriebolig i udlandet, sommerhus med pool">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;500&family=Muli&display=swap" rel="stylesheet">
+    <script src="script.js" async></script>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0 auto;
+        }
+
+        #destinationer img {
+            width: 100%;
+            justify-content: center;
+            object-fit: cover;
+        }
+
+
+
+        section {
+            margin-top: 24vh;
+            padding: 4vw;
+        }
+
+        #filter_container {
+            display: none;
+        }
+
+        .title {
+            font-size: 1.9rem;
+            margin-bottom: 1vw;
+        }
+
+
+
+
+
+
+        /*------------------CSS til SPLASH---------------------*/
+
+        #splash {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            margin: 0 auto;
+            margin-left: -2vw;
+            margin-top: -4vh;
+            margin-bottom: 10vh;
+            text-align: center;
+            grid-auto-rows: 1fr;
+        }
+
+
+        #splash div {
+            /*            width: 94%;*/
+            margin-left: 2vw;
+            margin-top: 6vh;
+        }
+
+
+        #splash img {
+            padding: 1vw;
+            cursor: pointer;
+        }
+
+
+
+        /*------------------------------MEDIAQUERY 375px-----------------------*/
+
+        @media screen and (min-width:375px) {
+            section {
+                margin-top: 20vh;
+            }
+
+        }
+
+
+        /*------------------------------MEDIAQUERY 768px-----------------------*/
+
+        @media screen and (min-width:768px) {
+
+            section {
+                margin-top: 22vh;
+            }
+
+
+            #splash {
+                grid-template-columns: repeat(3, 1fr);
+                grid-auto-flow: dense;
+
+
+            }
+
+            .intro_container {
+                width: 70vw;
+            }
+
+        }
+
+        /*------------------------------MEDIAQUERY 900px-----------------------*/
+
+        @media screen and (min-width:900px) {
+
+            .intro_container {
+                width: 60vw;
+            }
+        }
+
+
+        /*------------------------------MEDIAQUERY 1200px-----------------------*/
+
+        @media screen and (min-width:1200px) {
+            #destinationer {
+                max-width: 1200px;
+                margin: auto;
+                margin-top: 20vh;
+
+            }
+        }
+
+        /*------------------------------MEDIAQUERY 1400px-----------------------*/
+
+        @media screen and (min-width:1400px) {
+            .intro_container {
+                width: 50vw;
+            }
+
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="undermenu">
+        <div id="undermenu_knap"></div>
+        <a href="til_salg_nu.html">Til salg nu</a>
+        <a href="boliger.html">Boliger</a>
+        <a href="destinatoner.html" class="valgt_undermenu">Destinationer</a>
+
+    </div>
+
+    <header>
+
+
+        <nav>
+            <div id="logo">
+                <a href="index.html"><img src="billeder/logo.svg" title="Forside" alt="logo" class="logo"></a>
+            </div>
+
+            <div id="burgermenu" class="burgermenu_visibility">
+                <div id="burgermenu_knap"></div>
+                <ul id="burgermenu_background" class="hidden">
+
+                    <li><a href="til_salg_nu.html" class="valgt_mobil_menu">Vores ferieboliger</a></li>
+                    <li><a href="medlemskab.html">21-5 konceptet</a></li>
+                    <li><a href="jura.html">Økonomi, jura & skat</a></li>
+                    <li><a href="om_os.html">Om os</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+
+                </ul>
+            </div>
+
+            <div id="desktop_menu" class="desktopmenu_visibility">
+
+
+                <a href="til_salg_nu.html" class="valgt_desktop_menu">Vores ferieboliger</a>
+                <a href="medlemskab.html">21-5 konceptet</a>
+                <a href="jura.html">Økonomi, jura & skat</a>
+                <a href="om_os.html">Om os</a>
+                <a href="kontakt.html">Kontakt</a>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+
+
+
+    <section id="destinationer">
+
+        <div class="intro_container">
+
+            <h1 class="title"></h1>
+            <p class="afsnit1"></p>
+        </div>
+
+        <div id="filter_container">
+            <button class="filter"><a href="destinatoner.html">Destinationer</a></button>
+            <button class="filter"><a href="mallorca.html">Mallorca</a></button>
+            <button class="filter"><a href=""></a>Sydspanien</button>
+            <button class="filter"><a href=""></a>Toscana</button>
+            <button class="filter"><a href=""></a>Sydfrankring</button>
+            <button class="filter"><a href=""></a>Chamonix</button>
+            <button class="filter"><a href=""></a>New York</button>
+            <button class="filter"><a href=""></a>Barcelona</button>
+            <button class="filter"><a href=""></a>Paris</button>
+            <button class="filter"><a href=""></a>Rom</button>
+        </div>
+
+
+
+        <div id="splash">
+            <div><a href="mallorca.html"><img class="mallorca" src="" alt="">Mallorca</a></div>
+            <div><a href="mallorca.html"><img class="sydspanien" src="" alt="">Sydspanien</a></div>
+            <div><a href="mallorca.html"><img class="toscana" src="" alt="">Toscana</a></div>
+            <div><a href="mallorca.html"><img class="sydfrankring" src="" alt="">Sydfrankring</a></div>
+            <div><a href="mallorca.html"><img class="chamonix" src="" alt="">Chamonix</a></div>
+            <div><a href="mallorca.html"><img class="new_york" src="" alt="">Yew York</a></div>
+            <div><a href="mallorca.html"><img class="barcelona" src="" alt="">Barcelona</a></div>
+            <div><a href="mallorca.html"><img class="paris" src="" alt="">Paris</a></div>
+            <div><a href="mallorca.html"><img class="rom" src="" alt="">Rom</a></div>
+
+        </div>
+
+
+        <div id="cta_wrapper">
+            <h3 class="cta_txt"></h3>
+            <a href="kontakt.html" class="cta"></a>
+        </div>
+    </section>
+
+    <footer>
+
+        <div class="left element">
+            <ul>
+                <li><a href="">Hvad?</a></li>
+                <li><a href="">Hvor?</a></li>
+                <li><a href="">Hvorfor?</a></li>
+            </ul>
+        </div>
+
+        <div class="center element">
+            <p>Se mere på vores sociale medier, <br>eller tilmeld dig vores nyhedsbrev for mere</p>
+            <div class="center_wrap">
+
+                <div>
+                    <h1>Nyhedsbrev</h1>
+                    <form action="/action_page.php">
+                        <div class="form_container">
+                            <input class="email" type="text" placeholder="Email addresse" name="mail" required>
+
+                            <input class="tilmeld" type="submit" value="Tilmeld"></div>
+                    </form>
+                </div>
+
+                <div>
+                    <h1>Sociale medier</h1>
+                    <img src="billeder/facebook.svg" alt="facebook logo">
+                    <img src="billeder/instagram.svg" alt="instagram logo">
+                </div>
+
+
+            </div>
+        </div>
+
+
+        <div class="right element">
+            <p> 21-5
+                Rungstedvej 41,<br>
+                2970 Hørsholm</p>
+
+            <p>tlf 12233445 <br>
+                CVR 009090909 <br>
+                Copyright © 2010-2020</p>
+        </div>
+
+    </footer>
+
+    <script>
+        let side = [];
+        const URLend = "side?slug=destinationer"
+        const endpoint = `http://ariadna.dk/21-5/wp/wp-json/wp/v2/${URLend}`;
+        document.addEventListener("DOMContentLoaded", start);
+
+        function start() {
+            hentData();
+            console.log("start");
+
+        }
+
+        async function hentData() {
+            console.log("hentDta");
+            const response = await fetch(endpoint);
+            side = await response.json();
+            console.log(side);
+            showElement();
+        }
+
+
+
+
+        function showElement() {
+            console.log(side);
+            console.log("side virker");
+            side.forEach(element => {
+
+                document.querySelector(".title").textContent = element.title.rendered;
+                document.querySelector(".afsnit1").textContent = element.afsnit1;
+
+
+                document.querySelector(".mallorca").src = element.billede1.guid;
+                document.querySelector(".sydspanien").src = element.billede2.guid;
+                document.querySelector(".toscana").src = element.billede3.guid;
+                document.querySelector(".sydfrankring").src = element.billede4.guid;
+                document.querySelector(".chamonix").src = element.billede5.guid;
+                document.querySelector(".new_york").src = element.billede6.guid;
+                document.querySelector(".barcelona").src = element.billede7.guid;
+                document.querySelector(".paris").src = element.billede8.guid;
+                document.querySelector(".rom").src = element.billede9.guid;
+
+
+
+
+                document.querySelector(".cta_txt").textContent = element.tekst_til_cta;
+                document.querySelector(".cta").textContent = element.cta;
+
+            })
+
+        }
+
+    </script>
+</body>
+
+</html>

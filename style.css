@@ -1,0 +1,652 @@
+/*-----------  Generelt     --------*/
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: #f3f2f0;
+}
+
+header {
+    width: 100vw;
+    height: 15vh;
+    top: 0;
+    background-color: #fafafa;
+    box-shadow: 1px 1px 8px #acacac;
+    position: fixed;
+    z-index: 23;
+}
+
+
+#logo {
+    width: 11vh;
+    z-index: 24;
+    position: relative;
+    top: 2vh;
+    left: 3vw;
+}
+
+/*
+header a:link {
+    text-decoration: none;
+    color: #838383;
+}
+
+header a:visited {
+    text-decoration: none;
+    color: #838383;
+}
+*/
+
+header a:hover {
+    color: #505050;
+}
+
+header a:active {
+    color: #535353;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+
+/*fjerne undermenu knappen */
+#undermenu_knap {
+    display: none;
+}
+
+
+/*-----------  font til alle sider     --------*/
+
+a,
+figcaption {
+    font-family: 'Muli', sans-serif;
+    text-decoration: none;
+    color: #5f5f5f;
+    font-size: 1em;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Muli', sans-serif;
+    color: #707070;
+    font-weight: 300;
+    font-size: 1.5em;
+}
+
+p {
+    font-family: 'Mukta', sans-serif;
+    color: #707070;
+    font-size: .95em;
+    font-weight: 300;
+    line-height: 20px;
+}
+
+
+
+
+/*-----------  Call to action button  & andre buttons    --------*/
+#cta_wrapper {
+    text-align: center;
+    margin-bottom: 10vh;
+
+}
+
+
+button {
+    color: white;
+    background-color: #F29770;
+    border-style: none;
+    border-radius: 25px;
+    padding: .5em 1em .5em 1em;
+}
+
+.cta {
+    color: white;
+    background-color: #F29770;
+    border-style: none;
+    border-radius: 25px;
+    padding: .5em 1em .5em 1em;
+    font-size: 1.3em;
+}
+
+button a:link {
+
+    color: white;
+}
+
+button a:visited {
+
+    color: white;
+}
+
+button a:hover {
+    color: white;
+}
+
+button a:active {
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+
+#filter_container {
+
+    padding-bottom: 2em;
+}
+
+#filter_container button {
+    margin: .5em 1em .5em 1em;
+}
+
+
+/*--- Her er burgermenu synlig og desktop menu hidden - ændres i mediaquery 800px -*/
+
+.burgermenu_visibility {
+    visibility: visible;
+}
+
+.desktopmenu_visibility {
+    visibility: hidden;
+}
+
+/*-----------  Burgermenu     --------*/
+
+#burgermenu_knap {
+    position: fixed;
+    height: 7vw;
+    width: 7vw;
+    background-image: url(billeder/burger.svg);
+    background-size: cover;
+    top: 4vw;
+    right: 4vw;
+    z-index: 1;
+    cursor: pointer;
+}
+
+
+#burgermenu_background {
+    background-color: #fafafa;
+    top: 0vw;
+    right: 0vw;
+    height: 100vh;
+    width: 100vw;
+    padding-top: 20vw;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+
+#burgermenu li {
+    padding-right: 3vw;
+    text-decoration-line: none;
+    list-style-type: none;
+    padding-bottom: 7vw;
+    font-size: 5vw;
+    font-family: 'Muli', sans-serif;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+/*-----------  Burgermenu animation     --------*/
+
+.closed {
+    animation-name: close_kf;
+    animation-duration: 0s;
+    animation-fill-mode: both;
+    animation-timing-function: linear;
+
+}
+
+@keyframes close_kf {
+    0% {
+        background-image: url(billeder/cross.svg);
+
+    }
+
+    100% {
+        background-image: url(billeder/burger.svg);
+    }
+}
+
+
+.open {
+    animation-name: open_kf;
+    animation-duration: 0s;
+    animation-fill-mode: both;
+    animation-timing-function: linear;
+
+}
+
+@keyframes open_kf {
+
+
+    100% {
+        background-image: url(billeder/cross.svg);
+    }
+
+}
+
+/*-----------  Desktopmenu    --------*/
+
+#desktop_menu {
+    display: flex;
+    flex-direction: row;
+    right: 5vw;
+    top: 5vh;
+    position: fixed;
+}
+
+
+#desktop_menu a {
+    text-decoration-line: none;
+    list-style-type: none;
+    font-size: 1.2rem;
+    font-family: 'Muli', sans-serif;
+
+    margin-right: 3vw;
+    display: flex;
+
+}
+
+
+/*------------valgt menu------------*/
+
+#desktop_menu .valgt_desktop_menu {
+    border-bottom: 1px solid;
+}
+
+#undermenu .valgt_undermenu {
+    color: #707070;
+    border-bottom: 1px solid;
+}
+
+#burgermenu_background .valgt_mobil_menu {
+    border-bottom: 1px solid;
+}
+
+
+
+
+/*-----------  Undermenu    --------*/
+
+#undermenu {
+    width: 100vw;
+    height: 12vh;
+    background-color: #f29770;
+    position: fixed;
+
+    text-align: center;
+    padding-top: 4vh;
+    z-index: 22;
+    top: 14vh;
+}
+
+#undermenu a {
+    color: #fafafa;
+    font-size: 1.1rem;
+    font-family: 'Muli', sans-serif;
+    margin-right: 6vw;
+    text-decoration: none;
+}
+
+#undermenu_knap {
+    position: fixed;
+    height: 3vw;
+    width: 6.6vw;
+    background-image: url(billeder/down_arrow.svg);
+    background-size: cover;
+    top: 17vh;
+    right: 50vw;
+    z-index: 1;
+    cursor: pointer;
+
+}
+
+
+.undermenu_valgt {
+    color: #707070;
+}
+
+/*-----------  animation til arrow ved undermenu    --------*/
+
+.arrow_closed {
+    animation-name: arrow_close_kf;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+
+
+}
+
+@keyframes arrow_close_kf {
+    0% {
+        background-image: url(billeder/up_arrow.svg);
+        top: 28vh;
+    }
+
+    100% {
+        background-image: url(billeder/down_arrow.svg);
+        top: 17vh;
+    }
+}
+
+
+.arrow_open {
+    animation-name: arrow_open_kf;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+
+
+}
+
+@keyframes arrow_open_kf {
+
+
+    100% {
+        background-image: url(billeder/up_arrow.svg);
+        top: 28vh;
+    }
+
+}
+
+/*-----------  animation til undermenu  (orange del)  --------*/
+
+/*
+.undermenu_open {
+    animation-name: undermenu_open_kf;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+
+
+}
+
+
+@keyframes undermenu_open_kf {
+
+    0% {
+
+        top: 1vh;
+    }
+
+    100% {
+
+
+
+
+        top: 13vh;
+    }
+}
+
+.undermenu_close {
+    animation-name: undermenu_close_kf;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+
+
+}
+
+
+@keyframes undermenu_close_kf {
+
+    0% {
+
+        top: 13vh;
+    }
+
+    100% {
+
+
+        top: 1vh;
+    }
+}
+*/
+
+/*------ Footer    --------*/
+footer {
+    position: relative;
+    width: 100vw;
+    bottom: 0;
+    background-color: #DDCAB4;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer img {
+    width: 3em;
+    cursor: pointer;
+}
+
+footer .element {
+    padding: 1em 2em 1em 2em;
+    margin: 1em 0em 1em 0em;
+}
+
+
+
+footer ul {
+    padding: 1em;
+    color: #5f5f5f;
+}
+
+footer li {
+    padding-bottom: .5em;
+}
+
+footer .email {
+    border-radius: 12px;
+    border-style: none;
+    padding: .5em;
+}
+
+footer .tilmeld {
+    border-radius: 12px;
+    border-style: none;
+    padding: .5em;
+    color: white;
+    background-color: #5f5f5f;
+    cursor: pointer;
+}
+
+footer .center_wrap {
+    display: flex;
+}
+
+footer .center_wrap div {
+    padding-right: 2em;
+}
+
+
+
+/*------------------------------MEDIAQUERY 375px-----------------------*/
+
+@media screen and (min-width:375px) {
+
+    #undermenu {
+        height: 8vh;
+        padding-top: 3vh;
+    }
+}
+
+
+/*------ Mediaquerys  768   --------------------------------------------*/
+
+
+@media screen and (min-width: 768px) {
+
+    #undermenu {
+        height: 8vh;
+        padding-top: 3vh;
+    }
+
+    #undermenu a {
+        font-size: 2.5vw;
+    }
+
+    #burgermenu_knap {
+        width: 5vw;
+        height: 5vw;
+    }
+
+    #burgermenu li {
+        font-size: 4vw;
+    }
+}
+
+
+
+/*------ Mediaquerys  800 1200    --------------------------------------------*/
+
+
+@media screen and (min-width: 800px) {
+
+    /*
+    .burgermenu_visibility {
+        visibility: hidden;
+    }
+
+    .desktopmenu_visibility {
+        visibility: visible;
+    }
+*/
+
+    header {
+        height: 13vh;
+    }
+
+    #undermenu {
+        /*
+        top: 1vh;
+        height: 15vh;
+*/
+
+
+        top: 12vh;
+        height: 10vh;
+
+
+    }
+
+    #undermenu_knap {
+        top: 14vh;
+        height: 1vw;
+        width: 2.5vw
+    }
+
+    #undermenu a {
+        font-size: 1.15rem;
+
+    }
+
+    p {
+        font-size: .95em;
+    }
+
+    /*------ Mediaquerys  til animationer   --------*/
+
+    @keyframes arrow_close_kf {
+        0% {
+            background-image: url(billeder/up_arrow.svg);
+            top: 23vh;
+        }
+
+        100% {
+            background-image: url(billeder/down_arrow.svg);
+            top: 14vh;
+        }
+    }
+
+
+
+    @keyframes arrow_open_kf {
+
+
+        100% {
+            background-image: url(billeder/up_arrow.svg);
+            top: 23vh;
+        }
+
+    }
+
+
+    @keyframes undermenu_open_kf {
+
+        0% {
+            top: 1vh;
+        }
+
+        100% {
+            top: 11vh;
+        }
+    }
+
+
+
+    @keyframes undermenu_close_kf {
+
+        0% {
+            top: 11vh;
+        }
+
+        100% {
+            top: 1vh;
+        }
+    }
+
+}
+
+
+
+/*-----------  Mediaquerys  1100   --------*/
+
+@media screen and (min-width: 1100px) {
+
+    .burgermenu_visibility {
+        visibility: hidden;
+    }
+
+    .desktopmenu_visibility {
+        visibility: visible;
+    }
+
+
+}
+
+
+/*-----------  Mediaquerys  1200   --------*/
+
+@media screen and (min-width: 1200px) {
+    footer .element {
+        margin: 3em 0em 3em 0em;
+    }
+
+    footer .left {
+        margin-left: 7vw;
+    }
+
+    footer .right {
+        margin-right: 7vw;
+    }
+
+    #undermenu a {
+        font-size: 1.2rem;
+        padding-top: 2vw;
+    }
+
+
+    p {
+        font-size: 1.1rem;
+        line-height: 26px;
+    }
+
+}

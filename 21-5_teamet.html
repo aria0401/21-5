@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>21-5 | Teamet - Vi opfylder drømme</title>
+    <meta name="description" content="Fantastiske ferieboliger i udlandet. 21-5 har ejerforeninger der ligger i forskellige destinationer i verden. ">
+    <meta name="keywords" content="feriebolig, luksus sommerhus, sommerhus i udlandet, køb af feriebolig i udlandet, sommerhus med pool">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;500&family=Muli&display=swap" rel="stylesheet">
+    <script src="script.js" async></script>
+
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0 auto;
+            overflow-x: hidden;
+
+        }
+
+        img {
+            width: 100%;
+            justify-content: center;
+            object-fit: cover;
+        }
+
+        section {
+            margin: 3vw;
+            margin-top: 30vh;
+        }
+
+
+        .tilbage a {
+            text-decoration: none;
+            color: #f29770;
+            font-weight: 500px;
+        }
+
+        .tilbage a:hover {
+            color: #707070;
+        }
+
+
+
+        .navn {
+            margin-top: -2vw;
+        }
+
+        #undermenu_knap {
+            display: none;
+        }
+
+        .tilbage {
+            margin-top: 30vh;
+        }
+
+
+        .tilbage a {
+            text-decoration: none;
+            color: #f29770;
+            font-weight: 500px;
+        }
+
+        .tilbage a:hover {
+            color: #707070;
+        }
+
+        .tilbage_bottom {
+            margin-top: 4vh;
+            margin-bottom: 8vh;
+            margin-left: 4vw;
+        }
+
+
+        /*-------------------------------MAIN (grid)-----------------------*/
+
+        #grid {
+
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            max-width: 1000px;
+            grid-gap: 5px;
+            margin: 0 auto;
+            margin-top: 4vh;
+
+        }
+
+
+
+        article {
+            padding: 2vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+
+        #each_article {
+            padding: 2vw;
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: flex-end;
+        }
+
+
+        #each_article img {
+            height: 255px;
+            cursor: pointer;
+        }
+
+
+
+        /*------------------------------MEDIAQUERY 768px-----------------------*/
+
+        @media screen and (min-width:768px) {
+
+
+            #grid {
+
+                grid-template-columns: repeat(3, 1fr);
+
+            }
+
+            #each_article img {
+                height: 322px;
+
+            }
+
+
+        }
+
+        /*------------------------------MEDIAQUERY 900px-----------------------*/
+
+        @media screen and (min-width:900px) {
+
+            #grid {
+
+                grid-template-columns: repeat(3, 1fr);
+
+            }
+
+            #each_article img {
+                height: 352px;
+            }
+        }
+
+
+        /*------------------------------MEDIAQUERY 1200px-----------------------*/
+
+        @media screen and (min-width:1200px) {
+
+
+            #each_article img {
+                height: 400px;
+            }
+
+            section {
+                margin: 22vw 17vw 4vw 19vw;
+
+            }
+
+            .navn {
+                margin-top: -1vw;
+            }
+
+        }
+
+        /********************** QUERY 1400px ***************************/
+        @media only screen and (min-width: 1400px) {
+            section {
+                margin-top: 18vw;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="undermenu" class="undermenu_open">
+        <div id="undermenu_knap"></div>
+        <a href="om_os.html">Om os</a>
+
+
+    </div>
+
+    <header>
+
+
+        <nav>
+            <div id="logo">
+                <a href="index.html"><img src="billeder/logo.svg" title="Forside" alt="logo" class="logo"></a>
+            </div>
+
+            <div id="burgermenu" class="burgermenu_visibility">
+                <div id="burgermenu_knap"></div>
+                <ul id="burgermenu_background" class="hidden">
+
+                    <li><a href="til_salg_nu.html">Vores ferieboliger</a></li>
+                    <li><a href="medlemskab.html">21-5 konceptet</a></li>
+                    <li><a href="jura.html">Økonomi, jura & skat</a></li>
+                    <li><a href="om_os.html" class="valgt_mobil_menu">Om os</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+
+                </ul>
+            </div>
+
+            <div id="desktop_menu" class="desktopmenu_visibility">
+
+
+                <a href="til_salg_nu.html">Vores ferieboliger</a>
+                <a href="medlemskab.html">21-5 konceptet</a>
+                <a href="jura.html">Økonomi, jura & skat</a>
+                <a href="om_os.html" class="valgt_desktop_menu">Om os</a>
+                <a href="kontakt.html">Kontakt</a>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+    <section id="teamet">
+
+        <!--        <div class="tilbage"><a href="om_os.html">&lt; Tilbage til Om os</a> </div>-->
+
+        <h1 class="overskrift1"></h1>
+        <p class="afsnit1"></p>
+
+
+
+    </section>
+
+    <template id="template_grid">
+        <article id="each_article" class="click_article">
+            <h2 class="navn"></h2>
+            <p class="stilling"></p>
+            <img class="billede" src="" alt="">
+
+        </article>
+    </template>
+
+    <main id="grid"></main>
+
+    <!--    <div class="tilbage tilbage_bottom"><a href="om_os.html">&lt; Tilbage til om os</a> </div>-->
+
+    <div id="cta_wrapper">
+        <h3 class="cta_txt"></h3>
+        <a href="kontakt.html" class="cta"></a>
+    </div>
+
+
+    <footer>
+
+        <div class="left element">
+            <ul>
+                <li><a href="">Hvad?</a></li>
+                <li><a href="">Hvor?</a></li>
+                <li><a href="">Hvorfor?</a></li>
+            </ul>
+        </div>
+
+        <div class="center element">
+            <p>Se mere på vores sociale medier, <br>eller tilmeld dig vores nyhedsbrev for mere</p>
+            <div class="center_wrap">
+
+                <div>
+                    <h1>Nyhedsbrev</h1>
+                    <form action="/action_page.php">
+                        <div class="form_container">
+                            <input class="email" type="text" placeholder="Email addresse" name="mail" required>
+
+                            <input class="tilmeld" type="submit" value="Tilmeld"></div>
+                    </form>
+                </div>
+
+                <div>
+                    <h1>Sociale medier</h1>
+                    <img src="billeder/facebook.svg" alt="facebook logo">
+                    <img src="billeder/instagram.svg" alt="instagram logo">
+                </div>
+
+
+            </div>
+        </div>
+
+
+        <div class="right element">
+            <p> 21-5
+                Rungstedvej 41,<br>
+                2970 Hørsholm</p>
+
+            <p>tlf 12233445 <br>
+                CVR 009090909 <br>
+                Copyright © 2010-2020</p>
+        </div>
+
+    </footer>
+    <script>
+        let personer = [];
+        const container = document.querySelector("#grid");
+        let details = document.querySelector("#popup");
+        const URLend = "teamet"
+        const endpoint = `http://ariadna.dk/21-5/wp/wp-json/wp/v2/${URLend}`;
+        document.addEventListener("DOMContentLoaded", start);
+
+
+
+        function start() {
+            hentData();
+            hentSide();
+            console.log("start");
+
+        }
+
+        /************** script til listeview ********/
+
+
+        async function hentData() {
+
+            const response = await fetch(endpoint);
+            personer = await response.json();
+            console.log(personer);
+            showGrid();
+        }
+
+
+        function showGrid() {
+            console.log(personer);
+            container.innerHTML = "";
+            const Template = document.querySelector("#template_grid");
+
+            personer.forEach(element => {
+
+
+                const clon = Template.cloneNode(true).content;
+                clon.querySelector(".navn").textContent = element.navn;
+                clon.querySelector(".stilling").textContent = element.stilling;
+                clon.querySelector(".billede").src = element.billede.guid;
+
+
+                clon.querySelector(".click_article").addEventListener("click", function() {
+                    location.href = "singleview.html?id=" + element.id;
+
+                });
+
+                container.appendChild(clon);
+
+            });
+
+        }
+
+        /************** script til sidens title og text ********/
+
+        let side = [];
+        const urlSide = "side?slug=21-5-teamet"
+        const endpointSide = `http://ariadna.dk/21-5/wp/wp-json/wp/v2/${urlSide}`;
+        document.addEventListener("DOMContentLoaded", start);
+
+
+        async function hentSide() {
+
+            const responseSide = await fetch(endpointSide);
+            side = await responseSide.json();
+            console.log(side);
+            showElement();
+        }
+
+        function showElement() {
+            side.forEach(element => {
+
+                document.querySelector(".overskrift1").textContent = element.title.rendered;
+                document.querySelector(".afsnit1").textContent = element.afsnit1;
+
+                document.querySelector(".cta_txt").textContent = element.tekst_til_cta;
+                document.querySelector(".cta").textContent = element.cta;
+
+            })
+
+        }
+    </script>
+
+</body></html>
